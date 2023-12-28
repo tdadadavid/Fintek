@@ -1,0 +1,1 @@
+ALTER TABLE "Users" ADD COLUMN username VARCHAR(100);
