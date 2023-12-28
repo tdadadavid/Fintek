@@ -29,8 +29,11 @@ sqlc:
   # generate go sql
 	sqlc generate 
 
+start_prod:	
+	# start server in prod
+	./fingreat
 
-start:
+start_dev:
 	# start server
 	CompileDaemon -command="./fingreat"
 
