@@ -18,11 +18,11 @@ db_down:
 
 migrate_up:
 	# Make migration
-	migrate -path db/migrations -database "postgres://root:rootpassword@localhost:5432/fingreat?sslmode=disable" up
+	migrate -path db/migrations -database "postgres://<user>:<password>@localhost:5432/fingreat?sslmode=disable" up
 
 migrate_down:
 	# rollback migration
-	migrate -path db/migrations -database "postgres://root:rootpassword@localhost:5432/fingreat?sslmode=disable" down $(count)
+	migrate -path db/migrations -database "postgres://<user>:<password>@localhost:5432/fingreat?sslmode=disable" down $(count)
 
 
 sqlc:
