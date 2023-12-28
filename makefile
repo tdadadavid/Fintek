@@ -24,6 +24,10 @@ migrate_down:
 	# rollback migration
 	migrate -path db/migrations -database "postgres://<user>:<password>@localhost:5432/fingreat?sslmode=disable" down $(count)
 
+download_deps:
+	# download dependencies
+	go mod download
+
 
 sqlc:
   # generate go sql
